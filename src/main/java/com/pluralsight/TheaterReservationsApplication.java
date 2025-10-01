@@ -14,5 +14,6 @@ public class TheaterReservationsApplication {
         String[] nameSplit = name.trim().split(" ");
         System.out.printf("%d ticket(s) reserved for %s under %s, %s.", ticketAmount, date, nameSplit[1], nameSplit[0]);
         scanner.close();
+
     }
 }
