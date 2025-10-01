@@ -11,11 +11,8 @@ public class TheaterReservationsApplication {
         String date = scanner.nextLine();
         System.out.println("How many tickets will you be purchasing: ");
         int ticketAmount = scanner.nextInt();
-        System.out.printf("""
-                Name: %s
-                Date: %s
-                Number of Tickets: %d
-                """, name, date, ticketAmount);
+        String[] nameSplit = name.trim().split(" ");
+        System.out.printf("%d ticket(s) reserved for %s under %s, %s.", ticketAmount, date, nameSplit[1], nameSplit[0]);
         scanner.close();
     }
 }
